@@ -14,10 +14,10 @@
       return "<{$element} {$attributes}>{$innerhtml}</{$element}>";
     }
 
-    echo element("p");
-    echo element("p", "");
-    echo element("p", "some text");
-    echo element("p", "some text", "class='foo'");
+    // echo element("p");
+    // echo element("p", "");
+    // echo element("p", "some text");
+    // echo element("p", "some text", "class='foo'");
 
     function convert_weight($value, $unit = "kg")
     {
@@ -31,11 +31,22 @@
         }
     }
 
-    echo convert_weight(1, "lb");
-    echo convert_weight(1, "kg");
+    // echo convert_weight(1, "lb");
+    // echo convert_weight(1, "kg");
    
-    echo convert_weight(10, "lb");
-     echo convert_weight(1);
+    // echo convert_weight(10, "lb");
+    //  echo convert_weight(1);
+
+    $students = [];
+    $students[] = "Thomas";
+    $students[] = "Kathy";
+    array_push($students, "Evelin");
+    $students[] = "Bernard";
+    
+    // // echo var_dump($students);
+    // foreach($students as $element) {
+    //     echo $element . "<br>";
+    // }
 
     ?>
 </body>
