@@ -8,37 +8,16 @@
 </head>
 <body>
     <?php
-    $first_name = "Matěj";
-    $surname = "Bašta";
-    $year_of_birth = 1999;
-    $height = 180;
+    
+    function element($element, $innerhtml = "", $attributes = "")
+    {
+      return "<{$element} {$attributes}>{$innerhtml}</{$element}>";
+    }
 
-    define("SERVER_SOFTWARE", "Apache");
-    define("MY_OS", "Windows");
-
-echo "<p>First name: {$first_name}<br>Surname: {$surname}</p>";
-echo "<p>Year of birth: {$year_of_birth}<br>Height: {$height}</p>";
-echo "<p>This server is running on " . SERVER_SOFTWARE . ".";
-echo "<p>My operating system is " . MY_OS . ".<br>";
-
-function greet_world()
-{
-    echo "Hello World!";
-}
-greet("aha");
-
-function greet($whom)
-{
-    echo greeting($whom);
-}
-
-function greeting($whom)
-{
-    return "Hello {$whom}!";
-}
-
-greet_world();
-
+    echo element("p");
+    echo element("p", "");
+    echo element("p", "some text");
+    echo element("p", "some text", "class='foo'")
 
     ?>
 </body>
