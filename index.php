@@ -17,7 +17,25 @@
     echo element("p");
     echo element("p", "");
     echo element("p", "some text");
-    echo element("p", "some text", "class='foo'")
+    echo element("p", "some text", "class='foo'");
+
+    function convert_weight($value, $unit = "kg")
+    {
+        switch($unit) {
+            case "kg":
+                return $value * 2.20462262 . "<br>";
+                break;
+            case "lb":
+                return $value / 2.20462262 . "<br>";
+                break;    
+        }
+    }
+
+    echo convert_weight(1, "lb");
+    echo convert_weight(1, "kg");
+   
+    echo convert_weight(10, "lb");
+     echo convert_weight(1);
 
     ?>
 </body>
