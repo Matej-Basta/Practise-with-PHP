@@ -10,8 +10,11 @@
     <?php
     $first_name = "Matěj";
     $surname = "Bašta";
+    $year_of_birth = 1999;
+    $height = 180;
 
-echo "First name: {$first_name}<br>Surname: {$surname}"    
+echo "<p>First name: {$first_name}<br>Surname: {$surname}</p>";
+echo "<p>Year of birth: {$year_of_birth}<br>Height: {$height}</p>"
 
     ?>
 </body>
